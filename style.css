@@ -240,19 +240,28 @@ h1{
     display: none;
 }
 @media screen and (max-width:700px) {
+    header .search-input{
+        width: 180px;
+    }
     header{
         background: rgba(165, 14, 14, 0.779);
         backdrop-filter: blur(10px);
         font-size: 12px;
+        width: 100%;
+        margin-bottom: 40px;
         color: white;
     }
+    header ul{
+        margin-top: 22px;
+        margin-left: -10px;
+    }
     header ul li{
-        margin-left: -29px;
+        margin-left: 0px;
         padding: 4px 4px;
     }
     .container img{
-        margin-left: -130px;
-        margin-top: -340px;
+        margin-left: -190px;
+        margin-top: -290px;
         
     }
     .btn-home{
@@ -261,6 +270,8 @@ h1{
 
     }
     .product-item{
+        margin-top: 100px;
+        margin-left: 20px;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
