@@ -212,7 +212,10 @@ h1{
 .d-none{
     display: none;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+    }
     .offcanvas{
         background: rgba(0, 0, 0, 0.276);
         backdrop-filter: blur(11px);
@@ -225,7 +228,7 @@ h1{
     .navbar-toggler{
         margin-top: 0px;
         border: 3px groove #050b79 ;
-        margin-left: 400px;
+        margin-left: 320px;
     }
     
     .container img{
