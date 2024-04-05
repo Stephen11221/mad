@@ -1,47 +1,20 @@
 .cate-bg{
     background: #1D2951;
 }
+.navbar .offcanvas-body ul li {
+    padding-left: 25px;
+    margin-top: 20px;
+}
 .name-color{
     color: white;
-}
-header{
-        margin-top: -150px;
-        position: absolute;
-        z-index: 1;
-        
 }
 .icon{
     color: blue;
     margin-left: -200px;
     
     padding: 12px ;
-    
+   
 }
-.search-input{
-    flex: 1;
-    width: 200px;
-    height: 20px;
-    border-radius: 10px;
-    padding: 10px 10px;
-    border: 2px solid black;
-}
-ul {
-    margin-left: 200px;
-    margin-top: -25px;
-    list-style: none;
-}
-ul li{
-    padding-left: 20px;
-    text-align: right;
-    float: left;
-}
-ul li a{
-    padding:0 20px;
-    color: #050b79;
-    text-decoration: none;
-    
-}
-
 body{
     background-color: #dbd7c9;
 }
@@ -240,28 +213,25 @@ h1{
     display: none;
 }
 @media screen and (max-width:700px) {
-    header .search-input{
-        width: 180px;
+    .offcanvas{
+        background: rgba(0, 0, 0, 0.276);
+        backdrop-filter: blur(11px);
+    
+        height: 100vh;
     }
-    header{
-        background: rgba(165, 14, 14, 0.779);
-        backdrop-filter: blur(10px);
-        font-size: 12px;
-        width: 100%;
-        margin-bottom: 40px;
-        color: white;
+    .offcanvas ul li .nav-link{
+        color: aliceblue;
     }
-    header ul{
-        margin-top: 22px;
-        margin-left: -10px;
+    .navbar-toggler{
+        margin-top: 0px;
+        border: 3px groove #050b79 ;
+        margin-left: 400px;
     }
-    header ul li{
-        margin-left: 0px;
-        padding: 4px 4px;
-    }
+    
     .container img{
-        margin-left: -190px;
-        margin-top: -290px;
+        z-index: -2;    
+        margin-left: -170px;
+        margin-top: 40px;
         
     }
     .btn-home{
@@ -286,10 +256,9 @@ h1{
         margin-top: 60px;
         margin-bottom: 40px;
     }
-    .grid .first,.third
-    {
+    .grid .first,.third{
         height: 30px;
-        margin-top: -50px;
+        margin-top: -px;
     }
     .grid .third img {
         margin-top: 30px;
