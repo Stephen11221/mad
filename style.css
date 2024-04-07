@@ -1,6 +1,7 @@
 .navbar{
     margin-top: 30px;
-    background: transparent;
+    background: rgba(50, 50, 197, 0.18);
+    padding: 20px 20px;
 }
 .offcanvas-body form .form-control{
     width: 200px;
@@ -16,6 +17,9 @@
 .offcanvas-body ul li a{
     color: darkblue;
 }
+.offcanvas-body ul li .cont-color{
+    color: white;
+}
 .header-homer{
     margin-top: 240px;
     color: darkblue;
@@ -23,11 +27,40 @@
 .home-img{
     height: 100vh;
 }
-.cont{
-    color: white;
-}
+
 .bg-home{
     background: burlywood;
+}
+.bg-cate{
+    background: rgb(7, 7, 58);
+}
+.category{
+    margin-top: 180px;
+}
+.category img{
+    border: 5px solid white;
+    width: 300px;
+    height: 350px;
+
+}
+.category .cat-1{
+    font-weight: bold;
+    margin-top: 70px;
+    color: darkblue;
+}
+.jux-box{
+    z-index: -2;
+    position: absolute;
+    width: 680px;
+    height: 560px;
+    margin-top: -500px;
+    background: burlywood;
+}
+.shop img{
+    border: 2px solid darkblue;
+    margin-top: 120px;
+    width: 200px;
+    height: 200px;
 }
 .bg-cont{
 
@@ -54,6 +87,7 @@
     position: absolute;
     margin-top: 180px;
 }
+
 .small-circle{
     width: 120px;
     height: 120px;
@@ -94,12 +128,13 @@
 }
 @media screen and (max-width: 600px) {
     
-    
-    .offcanvas{
-        background: rgba(0, 0, 0, 0.276);
-        backdrop-filter: blur(11px);
-    
-        height: 100vh;
+    .offcanvas-body ul li .cont-color{
+        color: darkblue;
+    }
+    .offcanvas-body{
+        color: rgb(50, 50, 197);
+        background: rgba(8, 158, 65, 0.934);
+        backdrop-filter: blur(10px);
     }
     .home-img{
         height: 55vh;
@@ -110,6 +145,27 @@
 }
 .big-circle{
     display: none;
+}
+.jux-box{
+    display: none;
+}
+.bg-cate{
+    background: burlywood;
+}
+.category{
+    margin-top: -80px;
+}
+.category img{
+    margin-left: 80px;
+}
+.category .col-lg-3{
+    margin-top: 140px;
+}
+.category .col-lg-4{
+    margin-top: 80px;
+}
+.category .col-lg-2{
+    margin-top: 80px;
 }
 .bg-form form{
     margin-top: 11px;
