@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="Bootstrap 5.3/css/bootstrap.css">
+    <style>
+    @media screen and  (max-width: 600px) {
+        .container{
+        background: plum;
+        height:  100vh;
+        display: block;
+
+     }
+    }
+     form{
+            margin-top: 50px;
+            background: gainsboro;
+            padding: 10px  15px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <br>
+        <form action="index.html" method="post">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="" id="name">Name</label>
+                    <input type="text" name="" class="form-control" id="name">
+                </div>
+                <div class="col-lg-6">
+                    <label for="" id="email">Email</label>
+                    <input type="email" class="form-control" name="" id="email">
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <label for="" id="pass">Password</label>
+                    <input type="password" class="form-control" name="" id="pass">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <label for="" id="c-pass">Confirm Password</label>
+                    <input type="password"  class="form-control" name="" id="c-pass">
+                </div>
+            </div>
+            <br> <br>
+            <p><input type="checkbox" name="" id="checkbox"> I agree with terms and condition </p>
+            <button class="btn btn-outline-warning"  onclick="mybtn()">Are a robot</button>
+            <button type="submit" class="btn btn-primary">submit</button>
+            <p id="txt"></p>
+        </form>
+    </div>
+    <script src="">
+        function mybtn(){
+            var text;
+            if(confirm("Press a button")){
+                text="You are a human";
+            } else{
+                text="You are a robot";
+            }
+            document.getElementById("txt").innerHTML=text;
+        }
+
+    </script>
+    <script src="Bootstrap 5.3/js/bootstrap.bundle.js.map"></script>
+    <script src="Bootstrap 5.3/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 .navbar{
-    margin-top: 30px;
-    background: rgba(50, 50, 197, 0.18);
+    position: absolute;
+    margin-top: 50px;
     padding: 20px 20px;
 }
 .offcanvas-body form .form-control{
@@ -17,25 +17,45 @@
 .offcanvas-body ul li a{
     color: darkblue;
 }
+
 .offcanvas-body ul li .cont-color{
-    color: white;
+    color: green;
 }
 .header-homer{
-    margin-top: 240px;
+    margin-top: 140px;
     color: darkblue;
 }
 .home-img{
+    margin-top: -130px;
+    margin-left: -20px;
     height: 100vh;
 }
 
 .bg-home{
-    background: burlywood;
+    background: white;
+    animation:  2s  bg-home infinite;
+}
+@keyframes bg-home {
+    form{background: white;}
+    to{background: linear-gradient(90deg , grey , white);}
+}
+.home-btn button{
+    margin-left: 50px;
+    color: darkblue;
+}
+.home-btn button:hover{
+    background: green;
+    color: aliceblue;
 }
 .bg-cate{
-    background: rgb(7, 7, 58);
+    background: whitesmoke;
 }
 .category{
-    margin-top: 180px;
+    margin-top: 80px;
+}
+.category button:hover{
+    background: darkblue;
+    color: white;
 }
 .category img{
     border: 5px solid white;
@@ -51,20 +71,34 @@
 .jux-box{
     z-index: -2;
     position: absolute;
-    width: 680px;
-    height: 560px;
-    margin-top: -500px;
-    background: burlywood;
+    width: 700px;
+    height: 660px;
+    margin-left: -20px;
+    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px ;
+    margin-top: -630px;
+    background: linear-gradient(to top, darkgreen, rgb(101, 222, 101) );
+    border: 1px groove green;
+    animation-delay: 1s ;
+    animation: 4s bg-jux infinite;
+}
+@keyframes bg-jux {
+    from{background: linear-gradient( to top , darkgreen , rgb(101, 222, 101));
+    }
+    to{background: linear-gradient(to left , darkgreen, gray);}
+}
+.shop{
+    margin-left: -20px;
 }
 .shop img{
     border: 2px solid darkblue;
-    margin-top: 120px;
+    margin-top: 50px;
+    margin-left: 20px;
     width: 200px;
     height: 200px;
 }
 .bg-cont{
-
-    background: blueviolet;
+    background: green;
     padding: 20px 26px;
     height: 100vh;
     color: white;
@@ -104,6 +138,7 @@
     border-top-left-radius: 220px;
     margin-top: 128px;
     display: block;
+    background: linear-gradient(45deg, red , blue);
     margin-left: 158px;
 
 }
@@ -133,24 +168,36 @@
     }
     .offcanvas-body{
         color: rgb(50, 50, 197);
-        background: rgba(8, 158, 65, 0.934);
-        backdrop-filter: blur(10px);
     }
+    
     .home-img{
-        height: 55vh;
-        margin-left: -90px;
+        width: 250px;
+        height: 50vh;
+        margin-top: 35px;
+        margin-left: -30px;
     }
     .small-circle{
     display: none;
 }
+.header-homer {
+    margin-top: 50px;
+    margin-left: -280px;
+    animation: 10s move-right infinite;
+}
+@keyframes move-right {
+    from{margin-left: -280px;}
+    to{margin-left: 70px;}
+}
+
+
 .big-circle{
     display: none;
 }
 .jux-box{
     display: none;
 }
-.bg-cate{
-    background: burlywood;
+.shop img{
+    margin-left: 80px;
 }
 .category{
     margin-top: -80px;
